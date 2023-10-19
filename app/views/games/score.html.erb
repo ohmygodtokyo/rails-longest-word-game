@@ -1,0 +1,13 @@
+<div class="container align-items-center mt-5">
+  <h1 class="h1">YOUR RESULT</h1>
+
+  <ul class="list-unstyled">
+    <li>Attempt: <%= @attempt %></li>
+    <li>Translation: <%= @result[:translation] %></li>
+    <li>Time: <%= @result[:time] %></li>
+    <li>Message: <%= @result[:message] %></li>
+    <li>Score: <%= @result[:score] %></li>
+  </ul>
+
+  <%= link_to 'Restart game', new_path, class: "btn btn-secondary" %>
+</div>
